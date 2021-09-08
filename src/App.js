@@ -2,10 +2,10 @@ import './App.scss';
 import { filters } from "./utils/appUtils";
 import { useState, Fragment, useEffect, useCallback } from "react";
 import { v4 } from 'uuid';
-import Topbar from "./components/topbar";
-import Sidebar from "./components/sidebar";
-import Task from "./components/task";
-import TasksCreator from "./components/tasksCreator";
+import Topbar from "./components/Topbar";
+import Sidebar from "./components/Sidebar";
+import Task from "./components/Task";
+import TasksCreator from "./components/TasksCreator";
 
 function App() {
 
