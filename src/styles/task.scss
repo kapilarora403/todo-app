@@ -1,0 +1,79 @@
+.task {
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 18px 24px;
+  border-radius: 3px;
+  margin-top: 16px;
+
+  &:hover {
+    background-color: #6074F9;
+
+    .task-title {
+      color: #FFFFFF;
+    }
+
+    .task-date {
+      color: #FFFFFF;
+    }
+
+    .delete-button {
+      display: block;
+    }
+
+    .radio {
+      border-color: #FFFFFF;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .radio {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid #6074F9;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+
+    &.completed-radio {
+      background-color: #F96060;
+      border-color: #F96060;
+      color: #FFFFFF;
+    }
+  }
+
+  .task-details {
+    margin-left: 24px;
+  }
+
+  .task-title {
+    margin-bottom: 8px;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .task-date {
+    color: #9B9B9B;
+  }
+
+  .striked {
+    text-decoration: line-through;
+    color: #9E9E9E;
+  }
+
+  .delete-button {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: none;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+}
